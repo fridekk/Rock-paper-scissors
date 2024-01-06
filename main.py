@@ -5,7 +5,7 @@ choices = ['камень', 'ножницы', 'бумага']
 print("Давай сыграем в камень ножницы бумага")
 
 while True:
-    print ()
+    print()
     user_ans = input('Су-е-фа  ')
     random_choice = random.choice(choices)
     print(random_choice)
@@ -17,5 +17,7 @@ while True:
     elif user_ans == 'ножницы' and random_choice == 'бумага':
         print('Ты выиграл')
 
+    elif user_ans == random_choice:
+        print('Ничья')
     else:
         print('Ты проиграл')
